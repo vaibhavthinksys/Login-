@@ -1,103 +1,173 @@
-h1 {
-    color: aqua;
-}
-
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+
 }
+
 
 .login {
-    border: 2px solid black;
 
-    width: 30%;
+
+    width: 100%;
     margin: auto;
-    background-color: rgb(58, 58, 238);
+    background-color: rgb(7, 135, 221);
     border-radius: 10px;
-    
-    
+
+
 }
+
+.heading {
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Ropa Sans', sans-serif;
+    font-weight: bolder;
+    color: #f9f9f9;
+
+}
+
 
 .foot {
     color: blue
 }
 
 input {
-    width: 90%;
-    box-sizing: border-box;
-    margin: 10px;
-    padding: 10px;
-    height: 50px;
-    border-radius: 10px;
-    border: 1px solid black;
+
+    
+
+
+    height: 45px;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    background-color: lightgray;
+    width: 100% ;
 
 }
 
 button {
     width: 97%;
-    height: 25px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    background-color: rgb(216, 206, 206)
+    height: 30px;
+
+    cursor: pointer;
+    margin: 5px;
+    background-color: rgb(224, 218, 218);
+    border: none
 }
 
-    /* .wrapper {
-    
-        position: relative;
-    } */
+j .inputWrapper {
+    width: 100%;
+}
+
+.wrapper {
+    border-top: 1px solid black
+}
 
 .page {
     text-align: left;
-    border: 1px solid black;
+    
     border-radius: 20px 20px 0 0;
 
     background-color: white;
     position: relative;
-    height: 500px;
-
+    height: 100vh
 }
 
 .Email {
     display: flex;
     justify-content: flex-end;
     padding-right: 34px;
-} 
+}
 
 .line1 {
-    margin: 10px;
-    
+    font-size: 14px;
+   padding:10px;
+
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .line2 {
-    margin: 10px
+    margin: 0 0 20px 13px;
+    font-size: 14px;
+    color: grey;
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ropa Sans', sans-serif;
 }
 
 .subject {
     margin: 10px;
+    font-weight: bolder;
+    font-size: 11px;
 }
 
-button {
-    cursor: pointer;
-}
 
-p {
-    font-size: 14px;
-}
+
+
 
 img {
     width: 40px;
-    
-   
+
+
 }
-.wrapping{
+
+.wrapping {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 73px
 }
-.wrapper{
+
+.wrapper {
     position: absolute;
     bottom: 0;
     width: 100%
+}
+
+.flip {
+    margin-left: 10px;
+}
+
+.inputDialCode {
+    display: flex;
+    margin-left: 9px;
+
+    align-items: center;
+}
+
+.dialCode {
+    height: 45px;
+    border: none;
+
+
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+@media screen and (max-width: 366px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    .subject {
+        font-size: 9px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:366px) {
+    .inputWrapper {
+        width: 100%;
+        margin: 0 22px 0 0;
+    }
 }
